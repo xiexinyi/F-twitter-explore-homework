@@ -3,4 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: $container-padding-y $container-padding-x;
+  border-bottom: thin solid $border-color;
+
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 5px;
+      }
+      .sign-in {
+        @include btn-color($primary-color, $body-bg);
+      }
+      .sign-up {
+        @include btn-color($white, $primary-color);
+      }
+    }
+  }
 }
