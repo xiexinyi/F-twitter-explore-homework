@@ -12,6 +12,8 @@ body {
   color: $color-base;
   background-color: $body-bg;
   line-height: $line-height-base;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
