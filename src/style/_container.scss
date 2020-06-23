@@ -3,4 +3,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 33%;
+    padding: 50px;
+    border: thin solid $border-color;
+    border-radius: $border-radius-base;
+
+    h1 {
+      @extend .center;
+      padding-bottom: 50px;
+    }
+
+    span {
+      @extend .center;
+    }
+
+    input {
+      display: block;
+      margin: 0;
+      background-color: transparent;
+      border: transparent;
+      border-bottom: thin solid $border-color;
+    }
+
+    .password {
+      color: $primary-color;
+      padding: 0;
+      align-self: flex-start;
+      background-color: transparent;
+      border: transparent;
+    }
+
+    .sign-in {
+      @include btn-color($primary-color, $body-bg);
+      @extend .center;
+      width: 100%;
+    }
+    .sign-up {
+      @extend .sign-in;
+      @include btn-color($white, $primary-color);
+    }
+  }
 }

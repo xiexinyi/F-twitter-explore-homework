@@ -5,8 +5,7 @@
 
 @mixin btn-color($color, $background-color) {
   color: $color;
-  border-color: $primary-color;
   background-color: $background-color;
+  border-color: $primary-color;
   border-radius: 80px;
-  width: 100px;
 }

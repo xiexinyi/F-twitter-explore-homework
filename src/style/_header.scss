@@ -12,9 +12,11 @@
         margin-right: 5px;
       }
       .sign-in {
+        width: 100px;
         @include btn-color($primary-color, $body-bg);
       }
       .sign-up {
+        @extend .sign-in;
         @include btn-color($white, $primary-color);
       }
     }
