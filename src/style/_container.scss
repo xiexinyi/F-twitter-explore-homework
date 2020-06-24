@@ -16,7 +16,7 @@
 
     h1 {
       @extend .center;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
 
     span {
@@ -31,7 +31,7 @@
       border-bottom: thin solid $border-color;
     }
 
-    .password {
+    .forget-password {
       color: $primary-color;
       padding: 0;
       align-self: flex-start;
